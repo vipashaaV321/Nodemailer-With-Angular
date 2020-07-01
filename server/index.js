@@ -24,13 +24,13 @@ app.post('/sendFormData', (req, res) => {
     secure: 'true',
     port: '465',
     auth: {
-      user: 'vips3201v@gmail.com', // must be Gmail
-      pass: 'zzot fhtw thqs smao'
+      user: 'your mail', // must be Gmail
+      pass: 'your password'
     }
   });
 
   var mailOptions = {
-    from: 'vips3201v@gmail.com',
+    from: 'sender email',
     to: 'req.body.email', // must be Gmail
     cc:`${req.body.name} <${req.body.email}>`,
     subject: 'Sending Email using Node.js',
